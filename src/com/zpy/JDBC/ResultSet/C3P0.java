@@ -1,7 +1,8 @@
 package com.zpy.JDBC.ResultSet;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
+
 
 import java.beans.PropertyVetoException;
 import java.io.FileNotFoundException;

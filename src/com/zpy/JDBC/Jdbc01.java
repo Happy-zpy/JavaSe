@@ -1,6 +1,7 @@
 package com.zpy.JDBC;
 import com.mysql.cj.jdbc.Driver;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
+
 
 import java.io.*;
 import java.sql.Connection;

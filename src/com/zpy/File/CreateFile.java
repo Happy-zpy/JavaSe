@@ -1,6 +1,8 @@
 package com.zpy.File;
 
-import org.junit.jupiter.api.Test;
+
+
+import org.junit.Test;
 
 import java.io.File;
 import java.io.IOException;
@@ -10,8 +12,9 @@ import java.io.IOException;
  * 2025/9/15
  **/
 public class CreateFile {
-    @Test
 
+
+    @Test
    public void create() {
        File file = new File("D:\\new01.txt");
        try {

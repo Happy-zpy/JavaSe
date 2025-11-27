@@ -1,5 +1,6 @@
 package com.zpy.Generic;
-import org.junit.jupiter.api.Test;
+
+import org.junit.Test;
 
 /**
  * 作者：张鹏烨

@@ -1,5 +1,4 @@
 package com.collectionl;
-import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -9,6 +8,7 @@ import java.util.List;
  * 作者：张鹏烨
  * 2025/8/19
  **/
+@SuppressWarnings({"all"})
 public class iinterator {
     public static void main(String[] args) {
         List list = new ArrayList();
