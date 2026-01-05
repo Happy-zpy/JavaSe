@@ -249,40 +249,46 @@ public class HuffumanCode {
     }
 
     public static void main(String[] args) {
-        String testStr = "this is a test of huffman coding";
-        System.out.println("原始字符串: " + testStr);
-        System.out.println("原始字节长度: " + testStr.getBytes(StandardCharsets.UTF_8).length);
 
-        try {
-            // 构建霍夫曼树
-            Node root = buildHuffmanTree(testStr);
-            System.out.println("\n霍夫曼树前序遍历:");
-            root.preorder();
-
-            // 生成霍夫曼编码
-            Map<Byte, String> huffmanCodes = getHuffmanCodes(testStr);
-            System.out.println("\n霍夫曼编码表: " + huffmanCodes);
-
-            // 压缩
-            byte[] originalBytes = testStr.getBytes(StandardCharsets.UTF_8);
-            byte[] compressedBytes = zip(originalBytes, huffmanCodes);
-            System.out.println("\n压缩后的字节数组: " + Arrays.toString(compressedBytes));
-            System.out.println("压缩后字节长度: " + compressedBytes.length);
-
-            // 解压缩
-            byte[] decodedBytes = decode(huffmanCodes, compressedBytes);
-            String decodedStr = new String(decodedBytes, StandardCharsets.UTF_8);
-            System.out.println("\n解压缩后的字符串: " + decodedStr);
-            String s = "D:\\kk.jpg";
-            String destpath = "D:\\jj.zip";
-            Filezip(s,destpath);
-            String s1 = "D:\\i.jpg";
-            FileUnZip(destpath,s1);
-
-        } catch (Exception e) {
-            System.err.println("处理过程中发生错误: " + e.getMessage());
-            e.printStackTrace();
-        }
+//        String source = "D:/hello.txt";
+        String dest = "D:/hello.zip";
+//        Filezip(source, dest);
+        String dest2 = "D:/hello2.txt";
+        FileUnZip(dest,dest2);
+//        String testStr = "this is a test of huffman coding";
+//        System.out.println("原始字符串: " + testStr);
+//        System.out.println("原始字节长度: " + testStr.getBytes(StandardCharsets.UTF_8).length);
+//
+//        try {
+//            // 构建霍夫曼树
+//            Node root = buildHuffmanTree(testStr);
+//            System.out.println("\n霍夫曼树前序遍历:");
+//            //root.preorder();
+//
+//            // 生成霍夫曼编码
+//            Map<Byte, String> huffmanCodes = getHuffmanCodes(testStr);
+//            System.out.println("\n霍夫曼编码表: " + huffmanCodes);
+//
+//             //压缩
+//            byte[] originalBytes = testStr.getBytes(StandardCharsets.UTF_8);
+//            byte[] compressedBytes = zip(originalBytes, huffmanCodes);
+//            System.out.println("\n压缩后的字节数组: " + Arrays.toString(compressedBytes));
+//            System.out.println("压缩后字节长度: " + compressedBytes.length);
+//
+//            // 解压缩
+//            byte[] decodedBytes = decode(huffmanCodes, compressedBytes);
+//            String decodedStr = new String(decodedBytes, StandardCharsets.UTF_8);
+//            System.out.println("\n解压缩后的字符串: " + decodedStr);
+//            String s = "D:\\kk.jpg";
+//            String destpath = "D:\\jj.zip";
+//            Filezip(s,destpath);
+//            String s1 = "D:\\i.jpg";
+//            FileUnZip(destpath,s1);
+//
+//        } catch (Exception e) {
+//            System.err.println("处理过程中发生错误: " + e.getMessage());
+//            e.printStackTrace();
+//        }
     }
 }
 

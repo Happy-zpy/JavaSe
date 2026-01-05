@@ -15,7 +15,6 @@ public class manage {
     }
 }
 interface IA<T>{
-    @Test
     default void fun(){
         System.out.println("哈哈");
     }
